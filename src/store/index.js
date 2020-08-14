@@ -14,6 +14,10 @@ export default new Vuex.Store({
       this.state.alert = true;
       this.state.msgAlert = msg;
     },
+    REMOVE_ALERT(state, msg){
+      this.state.alert = false;
+      this.state.msgAlert = msg;
+    }
   },
   actions: {
   },

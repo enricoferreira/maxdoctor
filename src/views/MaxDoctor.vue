@@ -2,10 +2,10 @@
     <div>
         <Header></Header> 
         <Middle></Middle>
+        <v-alert dense width="442" class="my-5 mx-auto" type="success" :value="alert">
+            {{msgAlert}}
+        </v-alert>
         <Footer></Footer>
-        <!-- <v-alert dense width="442" type="success" :value="alert">
-            Sucesso
-        </v-alert> -->
     </div>
 </template>
 
@@ -13,7 +13,7 @@
 import Header from '../components/HeaderComponent.vue';
 import Middle from '../components/MiddleComponent.vue';
 import Footer from '../components/FooterComponent.vue';
-// import {mapMutations, mapState} from 'vuex';
+import {mapState} from 'vuex';
 
 export default {
     components: {
@@ -22,12 +22,9 @@ export default {
         Middle
     },
     name: 'MaxDoctor',
-    // computed: {
-    //     ...mapState(['alert'])
-    // },
-    // methods: {
-    //     ...mapMutations(['CHANGE_ALERT'])
-    // },
+    computed: {
+        ...mapState(['alert', 'msgAlert'])
+    },   
 }
 </script>
 

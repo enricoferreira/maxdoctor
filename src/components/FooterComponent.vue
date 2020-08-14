@@ -6,7 +6,7 @@
         <div class="mt-2">FACILIDADE <br> DE COMPRA</div>
       </div>
       <div class="d-flex flex-column justify-end align-center">
-        <div class="d-flex justify-space-around">
+        <div class="d-flex justify-space-around mb-1">
           <v-img v-for="(item, index) in arrayRectangle" :key="index" max-height="24" max-width="21" src="../assets/Rectangle1.png"></v-img>
         </div>
         <v-img max-width="84" max-height="19" src="../assets/icones/ICONEQUANTIDADE.png"></v-img>
